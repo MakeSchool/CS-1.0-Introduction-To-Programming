@@ -3,3 +3,101 @@ title: 'Building Functions Check-in'
 slug: 'building-functions-check-in'
 contentType: 'Assessment'
 ---
+
+# Check your Functions knowledge
+
+<FlashCard>
+<Prompt>
+
+In a function definition, what's the **term for placeholders**?
+
+</Prompt>
+<Answer>
+
+Parameters
+
+</Answer>
+</FlashCard>
+
+<MultipleChoice correct={3}>
+
+What's the **error** in this code?
+
+```
+def make_pancakes()
+    print("mix batter")
+    print("cook on hot griddle")
+    print("serve and eat")
+```
+
+1. No `return` statement
+2. Missing function parameters
+3. Missing `:` after definition
+
+Python needs a colon (`:`) after the parentheses in a function definition. The corrected function would be
+
+```
+def make_pancakes():
+    print("mix batter")
+    print("cook on hot griddle")
+    print("serve and eat")
+```
+
+</MultipleChoice>
+
+<MultipleChoice correct={2}>
+
+Be careful: this function has a typo!
+
+What will be printed out when this code runs?
+
+```
+def add_numbers(first, second):
+    return first + first
+
+result = add_numbers(10, 25)
+print(result)
+```
+
+1. 50
+2. 20
+3. 35
+4. It's a syntax error, so it won't run.
+
+The function's author made a mistake: this function adds `first` to itself.
+
+Because of the error, it adds 10 to 10, so the result is 20.
+
+</MultipleChoice>
+
+<TextResponse>
+<Prompt>
+
+In your words, explain the difference between using `return` and using `print` in a function
+
+</Prompt>
+<Explanation>
+
+`print` outputs the value to the console.
+
+`return` hands a value back to where the function was called, so that the caller can use the value there.
+
+</Explanation>
+</TextResponse>
+
+<FlashCard>
+<Prompt>
+
+What are some reasons to use functions?
+
+</Prompt>
+<Answer>
+
+Here are a few:
+
+- Reuse code without having to copy/paste
+- Make fewer mistakes
+- Break down big problems into smaller pieces
+
+</Answer>
+</FlashCard>
