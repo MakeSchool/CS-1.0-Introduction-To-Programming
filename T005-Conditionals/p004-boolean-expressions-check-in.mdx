@@ -10,64 +10,52 @@ Try to answer these questions as well as you can.
 
 ## What's the result?
 
-<MultipleChoice>
-  <Prompt>
+<FlashCard>
+<Prompt>
 
 ```
-10 == 18
-```
-
-</Prompt>
-<Choice>True</Choice>
-<Choice correct>False</Choice>
-  <Explanation>
-
-The `==` operator checks if two values are equal.
-
-10 does not equal 18, so the result is False.
-
-  </Explanation>
-</MultipleChoice>
-
-<MultipleChoice>
-  <Prompt>
-
-```
-10 == 10
-```
-
-  </Prompt>
-<Choice correct>True</Choice>
-<Choice>False</Choice>
-  <Explanation>
-
-The `==` operator checks if two values are equal.
-
-10 equals 10, so the result is True.
-
-  </Explanation>
-</MultipleChoice>
-
-<MultipleChoice>
-  <Prompt>
-
-```
-5 < 4
+5 == 5
 ```
 
 </Prompt>
-<Choice>True</Choice>
-<Choice correct>False</Choice>
-  <Explanation>
+<Answer>
 
-The `<` operator checks if the left value is less than the right value.
+`True`
 
-5 is not less than 4, so the result is False.
+</Answer>
+</FlashCard>
 
-  </Explanation>
-</MultipleChoice>
+<FlashCard>
+<Prompt>
 
-<MultipleChoice>
+```
+15 == 6
+```
+
+</Prompt>
+<Answer>
+
+`False`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+```
+15 > 6
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
   <Prompt>
 
 ```
@@ -75,16 +63,29 @@ The `<` operator checks if the left value is less than the right value.
 ```
 
 </Prompt>
-<Choice correct>True</Choice>
-<Choice>False</Choice>
-  <Explanation>
+  <Answer>
 
-The `<` operator checks if the left value is less than the right value.
+`True`
 
-3 is less than 10, so the result is True.
+</Answer>
+</FlashCard>
 
-  </Explanation>
-</MultipleChoice>
+<FlashCard>
+<Prompt>
+
+```
+"ada lovelace" == "Ada Lovelace"
+```
+
+</Prompt>
+<Answer>
+
+`False`
+
+When Python compares strings with `==`, it's a case-sensitive comparison.
+
+</Answer>
+</FlashCard>
 
 <MultipleChoice>
   <Prompt>
@@ -168,7 +169,7 @@ The `in` operator checks if the left side ("c") is contained in the right side (
 <MultipleChoice>
   <Prompt>
 
-### What does this code do?
+What does this code do?
 
 ```
 x = 7
@@ -189,7 +190,7 @@ It stores a value in a variable.
 <MultipleChoice>
   <Prompt>
 
-### What does this code do?
+What does this code do?
 
 ```
 x == 7
