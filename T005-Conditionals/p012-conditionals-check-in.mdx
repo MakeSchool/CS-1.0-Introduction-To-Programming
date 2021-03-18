@@ -67,7 +67,7 @@ The `<` operator checks if the left value is less than the right value.
   <Prompt>
 
 ```
-("blue" == "red") and (3 == 5)
+("blue" == "red") and (3 != 5)
 ```
 
 </Prompt>
@@ -77,9 +77,9 @@ The `<` operator checks if the left value is less than the right value.
 
 "blue" doesn't equal "red", so the left side is False.
 
-3 doesn't equal 5, so the right side is False.
+3 doesn't equal 5, so the right side is True.
 
-False and False make False.
+True and False make False.
 
 </Explanation>
 </MultipleChoice>
@@ -101,4 +101,48 @@ Combining multiple `and` expressions means that _all_ of the individual expressi
 In this case, each subexpression is True, so the whole thing is True.
 
 </Explanation>
+</MultipleChoice>
+
+<MultipleChoice correct={2}>
+
+What will this code print?
+
+```
+speed_limit = 30
+car_speed = 39
+
+if car_speed < speed_limit:
+    print("That's a safe speed.")
+else:
+    print("Too fast! Slow down!")
+```
+
+1. That's a safe speed.
+2. Too fast! Slow down!
+
+The `car_speed` is more than the `speed_limit`, so it prints "Too fast! Slow down!"
+
+</MultipleChoice>
+
+<MultipleChoice correct={3}>
+
+What will this code print?
+
+```
+stoplight = "red"
+
+if stoplight == "green":
+    print("Go!")
+elif stoplight == "yellow":
+    print("Slow down")
+elif stoplight == "red":
+    print("Stop!")
+```
+
+1. Go!
+2. Slow down
+3. Stop!
+
+The first two branches of the if / elif statement don't match, but the third branch does.
+
 </MultipleChoice>
