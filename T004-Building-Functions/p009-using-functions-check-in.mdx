@@ -3,3 +3,82 @@ title: 'Using Functions Check-in'
 slug: 'using-functions-check-in'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Check how well you understand: Using Functions
+
+<FlashCard
+  prompt="If you have a function named bake_bread that takes no arguments, how would you call the function?"
+  explanation="The function's name, followed by parentheses: bake_bread()"
+/>
+
+<FlashCard
+  prompt="How many times can you use a function you've defined?"
+  explanation="As many times as you want"
+/>
+
+<FlashCard>
+<Prompt>
+
+What are some other terms for "using a function"?
+
+</Prompt>
+<Answer>
+
+Run, call, invoke, execute
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+If you want to use this function, what code would you write?
+
+```
+def area(width, height):
+    return width * height
+```
+
+</Prompt>
+<Answer>
+
+To call this function, pass in values for the width and height, like:
+
+```
+area(10, 7)
+area(22, 18)
+```
+
+If you have variables with your width and height, you can pass in the variables:
+
+```
+x = 91
+y = 35
+area(x, y)
+```
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+How would you rewrite this function so that it returns the result instead of printing it?
+
+```
+def ounces_to_grams(amount):
+    result = amount * 28.35
+    print(result)
+```
+
+</Prompt>
+<Answer>
+
+```
+def ounces_to_grams(amount):
+    result = amount * 28.35
+    return result
+```
+
+</Answer>
+</FlashCard>

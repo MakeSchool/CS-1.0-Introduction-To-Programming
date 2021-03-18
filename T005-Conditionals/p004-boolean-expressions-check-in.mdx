@@ -3,3 +3,207 @@ title: 'Boolean Expressions Check-in'
 slug: 'boolean-expressions-check-in'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Check how well you understand boolean expressions
+
+Try to answer these questions as well as you can.
+
+## What's the result?
+
+<FlashCard>
+<Prompt>
+
+```
+5 == 5
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+```
+15 == 6
+```
+
+</Prompt>
+<Answer>
+
+`False`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+```
+15 > 6
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+  <Prompt>
+
+```
+3 < 10
+```
+
+</Prompt>
+  <Answer>
+
+`True`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+```
+"ada lovelace" == "Ada Lovelace"
+```
+
+</Prompt>
+<Answer>
+
+`False`
+
+When Python compares strings with `==`, it's a case-sensitive comparison.
+
+</Answer>
+</FlashCard>
+
+<MultipleChoice>
+  <Prompt>
+
+```
+"cat" == "dog"
+```
+
+</Prompt>
+<Choice>True</Choice>
+<Choice correct>False</Choice>
+  <Explanation>
+
+The `==` operator checks if the left value equals the right value.
+
+"cat" does not equal "dog", so the result is False.
+
+  </Explanation>
+</MultipleChoice>
+
+<MultipleChoice>
+  <Prompt>
+
+```
+("c" + "at") == "cat"
+```
+
+</Prompt>
+<Choice correct>True</Choice>
+<Choice>False</Choice>
+  <Explanation>
+
+First, the plus operator (`+`) adds the string "c" and the string "at".
+
+Then, the double equals operator (`==`) checks if the left side ("cat") equals the right side
+("cat").
+
+They do, so the result is `True`.
+
+  </Explanation>
+</MultipleChoice>
+
+<MultipleChoice>
+  <Prompt>
+
+```
+"c" in "cat"
+```
+
+</Prompt>
+<Choice correct>True</Choice>
+<Choice>False</Choice>
+  <Explanation>
+
+The `in` operator checks if the left side ("c") is contained in the right side ("cat").
+
+"c" is in "cat", so the result is True.
+
+  </Explanation>
+</MultipleChoice>
+
+<MultipleChoice>
+  <Prompt>
+
+```
+"c" in "dog"
+```
+
+</Prompt>
+<Choice>True</Choice>
+<Choice correct>False</Choice>
+  <Explanation>
+
+The `in` operator checks if the left side ("c") is contained in the right side ("dog").
+
+"c" is not in "dog", so the result is False.
+
+  </Explanation>
+</MultipleChoice>
+
+<MultipleChoice>
+  <Prompt>
+
+What does this code do?
+
+```
+x = 7
+```
+
+</Prompt>
+<Choice>Checks if x is equal to 7</Choice>
+<Choice correct>Assigns x the value 7</Choice>
+<Explanation>
+
+The single equals sign (`=`) is the _assignment operator_.
+
+It stores a value in a variable.
+
+  </Explanation>
+</MultipleChoice>
+
+<MultipleChoice>
+  <Prompt>
+
+What does this code do?
+
+```
+x == 7
+```
+
+</Prompt>
+<Choice correct>Checks if x is equal to 7</Choice>
+<Choice>Assigns x the value 7</Choice>
+<Explanation>
+
+The double equals sign (`==`) is the _equality check operator_.
+
+It compares two values, and returns True if they are equal, or False if they are not.
+
+  </Explanation>
+</MultipleChoice>
