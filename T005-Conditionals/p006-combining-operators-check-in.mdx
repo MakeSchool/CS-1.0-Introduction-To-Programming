@@ -10,48 +10,6 @@ Try to answer these questions as well as you can.
 
 ## What's the result?
 
-<MultipleChoice>
-  <Prompt>
-
-```
-("blue" == "red") and (3 == 5)
-```
-
-</Prompt>
-<Choice>True</Choice>
-<Choice correct>False</Choice>
-<Explanation>
-
-"blue" doesn't equal "red", so the left side is False.
-
-3 doesn't equal 5, so the right side is False.
-
-False and False make False.
-
-</Explanation>
-</MultipleChoice>
-
-<MultipleChoice>
-  <Prompt>
-
-```
-("five hundred" == 500) or (5 * 100 == 500)
-```
-
-  </Prompt>
-<Choice correct>True</Choice>
-<Choice>False</Choice>
-  <Explanation>
-
-"five hundred" does not equal 500, so the left side is False.
-
-5 \* 100 is 500, so the right side is True.
-
-When either the left or the right side of `or` is True, the whole expression is True.
-
-  </Explanation>
-</MultipleChoice>
-
 <MultipleChoice correct={1}>
 
 ```
@@ -68,3 +26,42 @@ When either the left or the right side of `or` is True, the whole expression is 
 The result of `and` is True if both the right and left side are True.
 
 </MultipleChoice>
+
+<FlashCard>
+<Prompt>
+
+```
+"coding" == "coding" and "coding is so fun" == "coding is so fun"
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+So very true.
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+  <Prompt>
+
+```
+("five hundred" == 500) or (5 * 100 == 500)
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+"five hundred" does not equal 500, so the left side is False.
+
+5 \* 100 is 500, so the right side is True.
+
+When either the left or the right side of `or` is True, the whole expression is True.
+
+</Answer>
+<FlashCard>
+
