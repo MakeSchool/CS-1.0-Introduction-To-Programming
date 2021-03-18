@@ -31,23 +31,6 @@ The result of `and` is True if both the right and left side are True.
 <Prompt>
 
 ```
-"coding" == "coding" and "coding is so fun" == "coding is so fun"
-```
-
-</Prompt>
-<Answer>
-
-`True`
-
-So very true.
-
-</Answer>
-</FlashCard>
-
-<FlashCard>
-  <Prompt>
-
-```
 ("five hundred" == 500) or (5 * 100 == 500)
 ```
 
@@ -63,5 +46,67 @@ So very true.
 When either the left or the right side of `or` is True, the whole expression is True.
 
 </Answer>
-<FlashCard>
+</FlashCard>
 
+<FlashCard>
+<Prompt>
+
+```
+(100 == 2 * 50) and ("200" == 200)
+```
+
+</Prompt>
+<Answer>
+
+`False`
+
+100 does equal 2 times 50, but the string "200" is not equal to the number 200.
+
+Both sides of an `and` have to be True for the result to be True.
+
+</Answer>
+</FlashCard>
+
+
+<FlashCard>
+<Prompt>
+
+```
+wind_speed = 15
+not (wind_speed > 30)
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+The `wind_speed` is not greater than 30, so this is true.
+
+Thinking about this in parts:
+
+- `wind_speed` is set to 15
+- `wind_speed > 30` is `False`
+- not `False` is `True`
+
+So the whole block is `True`.
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+```
+"coding" == "coding" and "coding is so fun" == "coding is so fun"
+```
+
+</Prompt>
+<Answer>
+
+`True`
+
+So very true.
+
+</Answer>
+</FlashCard>

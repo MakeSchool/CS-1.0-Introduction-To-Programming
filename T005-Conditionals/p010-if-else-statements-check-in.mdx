@@ -23,7 +23,8 @@ What keyword do you use for the code to run when an `if` statement _does not_ ma
 <SelfCheck />
 </FlashCard>
 
-<MultipleChoice correct={1}>
+<FlashCard>
+<Prompt>
 
 What will this code print?
 
@@ -37,20 +38,21 @@ else:
     print("Too fast! Slow down!")
 ```
 
-1. That's a safe speed.
-2. Too fast! Slow down!
+</Prompt>
+<Answer>
 
 The `car_speed` is less than the `speed_limit`, so it prints "That's a safe speed."
 
-</MultipleChoice>
+</Answer>
+</FlashCard>
 
-<MultipleChoice correct={2}>
+<FlashCard>
+<Prompt>
 
-What will this code print?
+What value of car_speed would make this code print `"That's a safe speed."`?
 
 ```
 speed_limit = 30
-car_speed = 39
 
 if car_speed < speed_limit:
     print("That's a safe speed.")
@@ -58,35 +60,13 @@ else:
     print("Too fast! Slow down!")
 ```
 
-1. That's a safe speed.
-2. Too fast! Slow down!
+</Prompt>
+<Answer>
 
-The `car_speed` is more than the `speed_limit`, so it prints "Too fast! Slow down!"
+If car_speed is a number less than 30, the code will print "That's a safe speed."
 
-</MultipleChoice>
-
-<MultipleChoice correct={3}>
-
-What will this code print?
-
-```
-stoplight = "red"
-
-if stoplight == "green":
-    print("Go!")
-elif stoplight == "yellow":
-    print("Slow down")
-elif stoplight == "red":
-    print("Stop!")
-```
-
-1. Go!
-2. Slow down
-3. Stop!
-
-The first two branches of the if / elif statement don't match, but the third branch does.
-
-</MultipleChoice>
+</Answer>
+</FlashCard>
 
 <TextResponse>
 <Prompt>
@@ -104,5 +84,4 @@ There's lots of things! Here's some examples:
 - Make a noise if a timer is done
 
 </Answer>
-
 </TextResponse>
