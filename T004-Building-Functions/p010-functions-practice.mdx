@@ -2,5 +2,122 @@
 title: 'Functions Practice'
 slug: 'functions-practice'
 contentType: 'Exercise'
-contentSrc: '<repl>'
+contentSrc: '@makeschool2/T4-FunctionsPractice'
 ---
+
+# Functions Practice
+
+Functions are a foundational building block of programming and you'll use them in almost every
+program you write. Since this is such an important skill, let's review what we've learned about
+functions so far! Follow the tutorial below to really cement your understanding :brain:
+
+## Part 1: Let's define a Python function!
+
+A function is like a reusable recipe.
+
+Take a look at the function below that computes the area of a rectangle:
+
+```python
+def area(width, height):
+    result = width * height
+    return result
+```
+
+In Python the keyword `def` tells Python that you are about to define a function.
+
+`def` is followed by the name of the function and the parameters are put inside parentheses ( ) and
+separated by commas.
+
+Indented under the function name is the action code (or code block) that does something to process
+the parameters.
+
+Finally in order to get the result the function must return something using the `return` keyword.
+
+**Task:** Copy the above `area()` function definition into the code editor.
+
+## Part 2: How can we use our function?
+
+Once you have defined a function we can now use it in our code!
+
+To use a function we have defined we need to "call" the function.
+
+To call a function you write the function name followed by parentheses and then you provide values
+to the function inside the parentheses like below:
+
+```python
+result = area(5, 6)
+print(result)
+```
+
+**Task:** Copy this function call and print() statement into the code editor and see what happens
+when you run it.
+
+<TextResponse>
+<Prompt>
+
+What would you see if you commented out the print statement? Why?
+
+</Prompt>
+
+<Explanation>
+
+Because the area function returns a value, we can use that value in our code and assign it a
+variable. However, returning a value does not print that value to the console. This means that
+without our print statement we don't see what the function returned.
+
+</Explanation>
+
+</TextResponse>
+
+## Part 3: Fill in the blanks
+
+Now that we've gotten some more practice writing function definitions and calling functions, let's
+work on filling in the blanks of an incomplete function called `subtract` that takes in two numbers
+and subtracts the second number from the first number:
+
+```python
+___ subtract(num1, num2):
+	___ = num1 - num2
+	___ result
+
+```
+
+**Task:** Fill in the blanks by writing the completed subtract function in the code editor. Then
+call your function and print out the result to test it.
+
+## Part 4: Last step!
+
+Great! Good job so far! Now we are ready for the next step, creating a function from a written
+description. This is what you'll do when writing your own programs or creating functions in a
+software engineering job.
+
+Consider this description: "Write a function called `divide()` which takes in two numbers and
+returns the first number divided by the second number"
+
+To write this function definition we first need to identify what the inputs or parameters are and
+then what the output should be or what the function should return.
+
+**Task:** Write the divide function in the code editor. Then call it and print the result. Check
+your solution using the card below when you are done!
+
+<FlashCard>
+<Prompt>
+
+What could a working implementation of the divide function look like?
+
+</Prompt>
+<Answer>
+
+```
+def divide(num1, num2):
+	result = num1 / num2
+	return result
+```
+
+</Answer>
+</FlashCard>
+
+## You did it!
+
+Great work putting together all of the pieces to write functions from a description just like you
+would when working as a software engineer :tada:
