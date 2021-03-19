@@ -1,5 +1,85 @@
 ---
 title: 'Drawing Variable Tables'
 slug: 'drawing-variable-tables'
-contentType: 'Exercise'
+contentType: 'TextContent'
 ---
+
+# What is a variable table?
+
+Let's practice an easy way of keeping track of variables and their values when we read more complicated code: **Variable Tables**.
+
+**Variable tables** include variable names along with their values at each line of code to help you understand how the value changes throughout a program. Let's look at at how they are created:
+
+This is a section of code to store score values in a video game.
+
+```python
+# Here are two variables that store data representing scores for a video game
+my_score = 30
+high_score = 60
+
+#let's use variable reassignment to update the scores!
+my_score = 31
+my_score = 99
+high_score = my_score
+```
+
+The variable table for this code contains each line of code in order and looks like this:
+
+| Line # | Variable   | Value |
+| ------ | ---------- | ----- |
+| 2      | `my_score`   | 30    |
+| 3      | `high_score` | 60    |
+| 6      | `my_score`   | 31    |
+| 7      | `my_score`   | 99    |
+| 8      | `high_score` | 99    |
+
+Let's look at the table entry for line 8: can you explain in your own words why the value in the table is 99?
+
+<TextResponse>
+  <Prompt>
+
+On line 8 of the table, why is the value of of `high_score` 99?
+
+  </Prompt>
+  <Explanation>
+
+`my_score` is assigned 30, then 31, then 99. `high_score` starts at 60 on line 3. Then, `high_score` gets assigned the value of `my_score` on line 8, which is 99.
+
+  </Explanation>
+  <SelfCheck />
+</TextResponse>
+
+## Create Your Own Variable Table
+
+<Action>
+
+Candy break! Draw your own variable table by walking through each line of the following code.
+
+</Action>
+
+```python
+# Let's count some candy bars
+number_of_kit_kats = 20
+number_of_skittles = 70
+number_of_hi_chews = 15
+
+number_of_kit_kats = 88
+number_of_skittles = number_of_kit_kats
+number_of_kit_kats = number_of_hi_chews
+number_of_hi_chews = number_of_skittles
+```
+
+## Check Your Understanding
+
+<MultipleChoice>
+  <Prompt>
+
+What is the value of `number_of_kitkats` when the program finishes?
+
+  </Prompt>
+
+  <Choice>20</Choice>
+  <Choice correct>70</Choice>
+  <Choice>15</Choice>
+  <Choice>88</Choice>
+</MultipleChoice>
