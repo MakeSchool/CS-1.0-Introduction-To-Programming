@@ -2,8 +2,35 @@
 title: 'Dictionaries'
 slug: 'dictionaries'
 contentType: 'VideoContent'
+contentSrc: 'RRwU6MI2_WA'
 ---
 
 # Dictionaries
 
 ## Check Your Understanding
+
+<FlashCard>
+<Prompt>
+
+Let's go back to our musicify app! How should we represent each of these sets of values in the app code? As a **list** or as a **dictionary**?
+
+* The songs in a single playlist?
+* The number of times that each song on the app has been streamed?
+* All of a user's playlists, each containing different songs?
+
+</Prompt>
+<Answer>
+
+Let's walk through each example!
+
+* A single playlist of songs, can be represented one single list of values - `["song1", "song2"]`
+* We want to map each number of streams to the corresponding song. Sounds like a job for a dictionary! - `{"song1": 40870543, "song2": 323}`
+* Here we can get fancy! Each playlist is a list of songs, but we want to map those lists to the playlist names. That means we can create a dictionary where each **key** (a song title) maps to a **value** that is of the type list (the list of songs in the playlist) like in the code block below.
+
+```python
+{"the coolest playlist title": ["song1", "song2"], 
+ "the most ok playlist": ["song3", "song4"]}
+```
+
+</Answer>
+</FlashCard>
