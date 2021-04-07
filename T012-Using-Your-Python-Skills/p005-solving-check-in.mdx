@@ -3,3 +3,223 @@ title: 'Problem Solving Check-in'
 slug: 'problem-solving-check-in'
 contentType: 'Assessment'
 ---
+
+# Problem Solving Strategies Questions
+
+Try answering these questions to practice your planning and problem solving skills.
+
+<TextResponse>
+<Prompt>
+
+Given this function description, list some **test inputs** that you would use to check if the
+function worked or not.
+
+`median` takes in a list of numbers and returns the median number - the one that's in the middle
+when the numbers are sorted.
+
+</Prompt>
+<Explanation>
+
+To test the `median` function, you could pass in different lists of numbers.
+
+Here are some cases you might check:
+
+- The empty list, `[]`
+- A list with just one number, like `[7]`
+- Lists with odd number of items: `[1,2,3]`
+- Lists with an even number of items: `[1,2,3,4]`
+- Lists where the items are not sorted: `[5, 2, 15, 3, 6]`
+- Lists with some floats and negative numbers: `[-2, 5.6, 8, -10]`
+
+You could also pass in some invalid inputs, to make sure the `median` function responds with a
+meaningful error:
+
+- a number `5`
+- a list with a string `['hello']`
+
+</Explanation>
+</TextResponse>
+
+<TextResponse>
+<Prompt>
+
+Given this function description, list some **test inputs** that you would use to check if the
+function worked or not.
+
+`excerpt` takes in a string of text, and returns the first 150 characters.
+
+</Prompt>
+<Explanation>
+
+To test the `excerpt` function, you could pass in different strings of text.
+
+Here are some cases you might check:
+
+- An empty string `''`
+- A string shorter than 150 characters
+- A string longer than 150 characters
+
+You could also pass in some invalid inputs, to make sure the `excerpt` function responds with a
+meaningful error:
+
+- a number `5`
+- a list `[]`
+
+</Explanation>
+</TextResponse>
+
+<FlashCard>
+<Prompt>
+
+This code snippet checks that both values are greater than 50. The code is correct, but doesn't use
+good style.
+
+What could you improve about this code?
+
+```python
+def check(l,m):
+  # print(l,m)
+  if l < m:
+    if l > 50:
+      return True
+    else:
+      # if m > 50:
+      #     return True
+      return False
+  else:
+    if m > 50:
+      return True
+    else:
+      return False
+```
+
+List out changes to this code easier for other developers to understand.
+
+</Prompt>
+<Answer>
+
+There's lots wrong with this code. Here's some style improvements:
+
+First, there's some commented-out code that is cluttering up the function. Delete it!
+
+Next, the name of the function and its inputs are not very helpful. The function could be named
+`greater_than_50` instead of `check`. Choosing the right name is hard, but it's usually better for
+the name to be specific than vague. `l` and `m` might be better named too.
+
+Any time there's an `if` statement that returns `True` and `False` from either branch, there's a
+chance to make it simpler.
+
+```python
+if m > 50:
+  return True
+else:
+  return False
+```
+
+is the same as
+
+```python
+return m > 50
+```
+
+`m > 50` turns into `True` or `False`, so it's the same as returning that value.
+
+Here's an improved version of the function:
+
+```python
+def greater_than_50(num1, num2):
+  if num1 < num2:
+    return num1 > 50
+  else:
+    return num2 > 50
+```
+
+Better, but there's still improvements to make.
+
+Instead of finding the smaller number, then checking that the smaller number is greater than 50, the
+code can be rewritten more clearly to check that `num1` _and_ `num2` are greater than 50.
+
+```
+def greater_than_50(num1, num2):
+  return num1 > 50 and num2 > 50
+```
+
+Much nicer.
+
+</Answer>
+</FlashCard>
+
+<TextResponse>
+<Prompt>
+
+Without writing the code, draw up a plan for solving the following problem:
+
+> You're writing software for a movie theater company. You're asked to write the part of the
+> software that handles age verification for tickets. Given a movie's rating and the ages of the
+> group attending the movie, your code needs to decide whether they are allowed to buy the tickets.
+>
+> For instance, a group of 11-year-olds are not allowed to buy tickets to see a PG-13 movie.
+
+</Prompt>
+</TextResponse>
+
+<FlashCard>
+<Prompt>
+
+Say your friend has written a chatbot like the one you built for your project.
+
+What could you do to check that the program works correctly?
+
+</Prompt>
+<Answer>
+
+You could read the code, and try to see if there are errors, but it's easy to miss how something
+could go wrong.
+
+Some ways of checking are:
+
+- try the chatbot out yourself, with different answers (Quality Assurance, or Manual Testing)
+- write out test cases to run in Python (Automated Testing)
+
+</Answer>
+</FlashCard>
+
+<TextResponse>
+<Prompt>
+
+Write a plan in pseudocode to solve the following problem (don't write the actual code):
+
+> You're tasked with writing the portion of a map application that figures out the travel time to a
+> destination. Your code will get the start and destination coordinates and the user's mode of
+> travel as inputs.
+
+</Prompt>
+<Explanation>
+
+There's lots of ways to break this problem down. Here's one strategy, that uses the straight-line
+distance.
+
+```
+// Use the distance formula to calculate the straight-line distance between the points
+// Look up the speed of travel for the user's mode of transportation
+// Divide the distance by the speed of travel
+```
+
+It may feel like cheating to say "use the distance formula" in the pseudocode, but pseudocode is
+allowed to take shortcuts like that. So long as you have a formula, and are confident that it can be
+translated into code, you can say things like "use the formula".
+
+When it's time to put the formula into code, it can be helpful to write pseudocode for the distance
+formula too:
+
+```
+// Distance formula:
+// (start_x - end_x), squared
+// (start_y - end_y), squared
+// add those together, then take the square root
+```
+
+Since it's a smaller piece of the larger program, it looks a little closer to actual Python.
+
+</Explanation>
+</TextResponse>
