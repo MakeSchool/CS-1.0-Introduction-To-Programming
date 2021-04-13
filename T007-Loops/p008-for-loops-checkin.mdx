@@ -3,3 +3,39 @@ title: 'For Loops Checkin'
 slug: 'for-loops-checkin'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Check your understanding of definite iteration with for loops
+
+<FlashCard>
+<Prompt>
+
+Your job is to create an app that tells air traffic controllers the destination of each flight scheduled to leave the airport during their shift. Given a list of flights that are scheduled to leave during a user's shift, would it be better to use a for loop or a while loop to print out all of the destinations?
+
+</Prompt>
+<Answer>
+
+In this case we know exactly how many flights to loop through - the number of flights in the shift list!  That means that this is a use for **definite** iteration, and we can use a for loop to iterate through each flight in the list of flights.
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+We want to increase the prices at a grocery store by $1 per item. Can you spot the errors in this for loop definition to increase the prices?
+
+```python
+for price in grocery_prices;
+	grocery_prices[price] += 1
+```
+
+</Prompt>
+<Answer>
+
+There are two errors in this code!
+
+* The first line of the for loop ends with a semicolon instead of a colon. This is a common typo and can be hard to spot!
+* The code block inside of this loop is mixing both ways of indexing into a list with for loops together! In this case, price represents the next price in the list at each iteration, so we can't use the item value to index into the list. We need to use the `range()` method to loop through the indices from 0 to the length of the list and update the value at each index.
+
+</Answer>
+</FlashCard>
