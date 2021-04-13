@@ -3,3 +3,44 @@ title: 'Find the Bug'
 slug: 'find-the-bug'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Find the Bug :ladybug:
+
+<Challenge>
+
+This code is supposed to supposed to add each item in the list with the next and print the result, but there's a bug ... can you find it using your mental model of Python? (Hint: This code throws an IndexError when it runs)
+
+```python
+add_them = [1, 5, 7, 8]
+
+for index in range(len(add_them)):
+	print(add_them[index] + add_them[index + 1])
+```
+
+</Challenge>
+
+<TextResponse>
+<Prompt>
+
+Can you describe in two sentences what bug you found in the code? Being able to describe a bug is very useful when you are reviewing other people's code and can't just fix the error yourself!
+
+</Prompt>
+
+</TextResponse>
+
+# Check Your Solution
+
+Click to see how we fixed the error!
+
+<Solution>
+
+The last element in the list doesn't have a following element to add it to! Trying to reach an element outside of the range of the list was giving us an IndexError, so we can only iterate up to the second to last element in the list.
+
+```python
+add_them = [1, 5, 7, 8]
+
+for index in range(len(add_them) - 1):
+	print(add_them[index] + add_them[index + 1])
+```
+
+</Solution>
