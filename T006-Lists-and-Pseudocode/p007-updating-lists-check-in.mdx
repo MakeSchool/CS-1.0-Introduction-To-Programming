@@ -3,3 +3,54 @@ title: 'Updating Lists Check-in'
 slug: 'updating-lists-check-in'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Check your understanding of list updates
+
+<FlashCard>
+<Prompt>
+
+What are three of the list methods that we can use to change (or **mutate**) lists in Python?
+
+</Prompt>
+<Answer>
+
+* To add to lists we can use: append(), prepend(), extend(), or insert()
+* To remove from lists we can use: remove(), pop(), or clear()
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+What would happen if you ran the following lines of code in the Python console? 
+
+```python
+cricket_scores = [12.4, 20]
+cricket_scores[2] = 20
+```
+
+</Prompt>
+<Answer>
+
+This code would cause an `IndexError`, because the index you’re trying to access does not exist yet. To add another item to the end of a list in python, we use the append method: `cricket_scores.append(20)`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+The batting lineup for this baseball team is changing! How could you add a new batter, Jade, to the **beginning** of the list? 
+
+```python
+batters = ["Joe", "Jess", "Jim", "Julia"]
+```
+
+</Prompt>
+<Answer>
+
+We could prepend to the list like this: `batters.prepend("Jade")`. **OR** we could insert a new item into the list at the index 0 like this: `batters.insert(0, "Jade")`. There can be different ways to reach the same result with lists in Python!
+
+</Answer>
+</FlashCard>
