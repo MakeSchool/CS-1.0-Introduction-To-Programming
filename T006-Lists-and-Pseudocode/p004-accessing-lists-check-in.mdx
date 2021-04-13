@@ -3,3 +3,70 @@ title: 'Accessing Lists Check-in'
 slug: 'accessing-lists-check-in'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Questions: Understanding how to access lists
+
+<FlashCard>
+<Prompt>
+
+How many elements are in this list? 
+
+`todo = ['eat', 'sleep', 'play a game']`
+
+</Prompt>
+<Answer>
+
+This list contains three elements. Each one of them is of the type string.
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+What index would we use to access the item 'sleep' in this list? 
+
+`todo = ['eat', 'sleep', 'play a game']`
+
+</Prompt>
+<Answer>
+
+This is a tricky one! Because list indexing starts at **0** in Python and most other programming languages, the second element ("sleep") is accessed using the index **1**, like this: `todo[1]`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+Oops, something went wrong when creating this list. Can you spot the error? 
+
+`vacation_packing_list = {'shades', 'swimsuit', 'sunscreen']`
+
+</Prompt>
+<Answer>
+
+This list was created using mismatched brackets. The syntax for a list in Python uses only **square brackets**, so we can fix this line of code by changing it to 
+
+`vacation_packing_list = ['shades', 'swimsuit', 'sunscreen']`
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+Negative list indexing is a powerful tool that we can use to access a list **backwards**. What list element are we accessing in the following code snippet? 
+
+```python
+temp_data = {45, 49, 32, 36, 41]
+temp_yesterday = temp_data[-2]
+```
+
+</Prompt>
+<Answer>
+
+`temp_yesterday` will be equal to the value 36.
+
+</Answer>
+</FlashCard>
