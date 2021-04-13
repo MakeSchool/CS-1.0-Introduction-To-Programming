@@ -4,6 +4,22 @@ slug: 'while-loops-check-in'
 contentType: 'CheckForUnderstanding'
 ---
 
+# Questions: How well do you know your while loops
+
+<FlashCard>
+<Prompt>
+
+What is the difference between the `continue` and `break` keywords when they are used to interrupt a while loop in Python?
+
+</Prompt>
+<Answer>
+
+* `continue`: This keyword causes the Python interpreter to skip the rest of the code block inside the while loop but only for the current iteration. The while loop continues if the boolean expression still evaluates to True.
+* `break`: This keyword causes the while loop to exit and move on to the code after the while loop, even if the boolean expression for the while loop still evaluates to True.
+
+</Answer>
+</FlashCard>
+
 <FlashCard>
 <Prompt>
 
@@ -34,7 +50,29 @@ while count < 5:
 </Prompt>
 <Answer>
 
-The first while loop prints out the sequence `1, 2`.  The second prints out the sequence `1, 2, 4, 5`.  This is because in the first loop, we use the keyword `break` to completely exit the iteration when `count` is equal to 3. The second loop uses the keyword `continue` in that same if statement, so the loop skips the rest of that iteration of the code block (printing out the value 3) and jumps back to the top of the loop. Try walking back through both loops one more time to cement your understanding of using `break` and `continue`!
+The first while loop prints out the sequence `1, 2`.  
+
+The second prints out the sequence `1, 2, 4, 5`.  
+
+This is because in the first loop, we use the keyword `break` to completely exit the iteration when `count` is equal to 3. The second loop uses the keyword `continue` in that same if statement, so the loop skips the rest of that iteration of the code block (printing out the value 3) and jumps back to the top of the loop. Try walking back through both loops one more time to cement your understanding of using `break` and `continue`!
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+How many times will the code block of this while loop execute?
+
+```python
+while True:
+	print("Do a loopedy loop!")
+```
+
+</Prompt>
+<Answer>
+
+This is an infinite loop! True will always evaluate to True, so this while loop will run forever until you exit the program or use the break keyword to exit the loop. This code pattern is commonly in video games, and you'll even get to use it in your very first Python project later in the course!
 
 </Answer>
 </FlashCard>
