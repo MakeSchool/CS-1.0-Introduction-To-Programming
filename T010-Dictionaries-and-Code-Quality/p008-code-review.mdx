@@ -3,3 +3,63 @@ title: 'Code Review'
 slug: 'code-review'
 contentType: 'CheckForUnderstanding'
 ---
+
+# Code Review :mag:
+
+Code review is process where someone other than the author of a piece of code checks the **quality** of a program and then gives feedback about the logic, style, testing practices, and any other aspect of the code that could be improved. 
+
+Code reviews save time and money and are a great way to share knowledge among developers! Practice this essential software developent skill by doing your own review of the following code.
+
+<Challenge>
+
+Give your review of this version of the Chat Bot project! It works as expected, but try to identify at least 3 ways the author could improve their code and record them in the text response below. If you need inspiration, you can jump back to the previous lesson for a list of attributes that good quality code should have!
+
+```python
+from random import choice
+def get_Bot_esponse(user_response):
+
+  happy = ["Yay!", "That's awesome!", "Glad to hear it!"]
+  response_sad = ["That's too bad", "I'm sorry to hear that"]
+  if user_response == "happy":
+    return choice(happy)
+
+  elif user_response == "sad":
+    return choice(response_sad)
+  else:
+    return("I didn't understand that")
+
+print("Welcome to Mood Bot")
+print("Please tell me if you're feeling happy or sad.")
+
+while True:
+  q = input("How are you feeling today?: ")
+  if q == "done":
+    break
+
+
+  Bot = get_Bot_response(q)
+  print(Bot)
+```
+
+</Challenge>
+
+<TextResponse>
+<Prompt>
+
+Give your code review here!
+
+</Prompt>
+
+</TextResponse>
+
+# Check Your Solution
+
+Click to see a few examples of things that we thought could have been improved in the Chat Bot code above.
+
+<Solution>
+
+* Consistent and readable names - some of the variable names weren't descriptive and didn't follow a standard format
+* Comments - none of the functions were commented to help the reader understand their purpose!
+* Consistent spacing - the spacing between lines of code is inconsistent and confusing
+
+</Solution>
