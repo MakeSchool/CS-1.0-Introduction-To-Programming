@@ -1,0 +1,27 @@
+---
+title: 'Personal Goals Review'
+slug: 'personal-goals-review'
+contentType: 'Assessment'
+---
+
+# Reflecting on your goals
+
+When you started this course, you had some assumptions, expectations, and goals. Let's take a few
+minutes to reflect on the course by looking back at where you were when you started, and looking
+forward to what you plan to do next.
+
+<>
+  {[
+    'What were your goals when you started this course?',
+    'In what ways have you reached those goals through the course?',
+    'What parts of your goals do you still have to accomplish?',
+    'What were your expectations at the start of the course? What surprised you along the way?',
+    'What are you proud of from the course?',
+    'What are you still confused about?',
+    'What are you excited to learn about next?',
+  ].map(reflectionQuestion => (
+    <TextResponse prompt={reflectionQuestion} />
+  ))}
+</>
+
+Thanks for taking the time to reflect.

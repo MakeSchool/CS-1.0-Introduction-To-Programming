@@ -1,0 +1,51 @@
+---
+title: 'While Loops'
+slug: 'while-loops'
+contentType: 'VideoContent'
+contentSrc: 'kwiul1KC5go'
+---
+
+# While Loops
+
+In this video, you’ll learn how to use indefinite iteration in Python with while loops. Looping can be tricky, so be sure to check your understanding with the flash card below!
+
+## Check Your Understanding
+
+<FlashCard>
+<Prompt>
+
+Walk through each iteration of the two loops below. What does the first loop print? What does the second loop print?
+
+```python
+count = 0
+
+while count < 5:
+	count += 1
+	if count == 3:
+		break
+
+	print(count)
+```
+
+```python
+count = 0
+
+while count < 5:
+	count += 1
+	if count == 3:
+		break
+
+	print(count)
+```
+
+</Prompt>
+<Answer>
+
+The first while loop prints out the sequence `1, 2`.  
+
+The second prints out the sequence `1, 2, 4, 5`.  
+
+This is because in the first loop, we use the keyword `break` to completely exit the iteration when `count` is equal to 3. The second loop uses the keyword `continue` in that same if statement, so the loop skips the rest of that iteration of the code block (printing out the value 3) and jumps back to the top of the loop. Try walking back through both loops one more time to cement your understanding of using `break` and `continue`!
+
+</Answer>
+</FlashCard>

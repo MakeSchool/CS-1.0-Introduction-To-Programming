@@ -1,0 +1,33 @@
+---
+title: 'Writing Check-in'
+slug: 'writing-check-in'
+contentType: 'CheckForUnderstanding'
+---
+
+# Question: How is your understanding of writing files in Python
+
+<FlashCard>
+<Prompt>
+
+If you were writing to a file containing previous weather data in order to add on the new data collected that day, which mode would be best to open the file in?
+
+</Prompt>
+<Answer>
+
+In this case, we want to add - or **append** - data to the file, so we can call the `open()` method with the parametere 'a' for append mode. If we opened the file in 'w' - or **write** - mode, we would lose all of the previous data when we wrote the new weather report to the file!
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+Let's take a shortcut! How can you avoid opening and closing a file every time you want to write to it in Python?
+
+</Prompt>
+<Answer>
+
+The `with` keyword lets you open a file in Python and then trust the interpreter to close the file when it's no longer needed without having to call the `close()` method. Try out using the `with` method of writing to a file in the previous exercise if you were using both `open()` and `close()` in your original solution!
+
+</Answer>
+</FlashCard>

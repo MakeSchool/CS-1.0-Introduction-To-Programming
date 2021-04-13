@@ -1,0 +1,42 @@
+---
+title: 'Lists and Pseudocode Check-in'
+slug: 'lists-and-pseudocode-check-in'
+contentType: 'Assessment'
+---
+
+# Check your knowledge of lists and pseudocode :memo:
+
+<MultipleChoice>
+<Prompt>
+
+What value would this list slice return?
+
+```python
+instruments = ["guitar", "drums", "flute", "voice"]
+instruments[1:-1]
+```
+
+</Prompt>
+<Choice>["guitar, "drums"]</Choice>
+<Choice correct>["drums", "flute"]</Choice>
+<Choice>["drums"]</Choice>
+<Choice>IndexError - This is not a valid list slice</Choice>
+<Explanation>
+
+This list slice is cutting off both the first and last element of the list. It starts at the second element (index 1) and ends before the last element using negative list indexing. Try using the python console to change the index values and see what other slicing combinations you can create.
+
+</Explanation>
+</MultipleChoice>
+
+<TextResponse>
+<Prompt>
+
+:guitar: As the lead guitarist in a band, you are responsible for ticket sales when you play at local festivals. Calculating how much you made during a show seems like a great job for a Python program! Explain to your other band members using pseudocode how you are going to approach this problem. 
+
+-- 
+
+Tickets are the following prices: Adults - $12, Kids - $4, Groups of 10 or more - 50% off every ticket. At the end of the night you get a list of how many tickets were sold to Adults, Adults in Groups, Kids, and Kids in Groups. How much money did you make?
+
+</Prompt>
+
+</TextResponse>

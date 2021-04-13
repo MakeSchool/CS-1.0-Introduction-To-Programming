@@ -1,0 +1,35 @@
+---
+title: 'Reading Check-in'
+slug: 'reading-check-in'
+contentType: 'CheckForUnderstanding'
+---
+
+# Check your understanding of reading files
+
+<FlashCard>
+<Prompt>
+
+Let's practice reading Python documentation! Read the documentation for the `open()` function here: [https://docs.python.org/3/library/functions.html#open](https://docs.python.org/3/library/functions.html#open). What is another mode that you could use other than 'r' when calling `open()`?
+
+</Prompt>
+<Answer>
+
+Another mode listed in the documentation is 't', or text mode. Unlike with 'b' (binary) mode, where the data from the file is read into Python as **bytes**, text mode reads the file in as a string.
+
+</Answer>
+</FlashCard>
+
+<FlashCard>
+<Prompt>
+
+Why do we need to close files when we're done accessing them?
+
+</Prompt>
+<Answer>
+
+One reason might be that other code in a complicated system could be waiting to use the file and can't access it until the file has been closed.
+
+Another reason could be that when we write to files, Python doesn't usually write data to a file right away. The data may spend time in something called a **buffer** until the file is closed and the buffer is cleared. If you end the program without closing a file some of that data could be lost!
+
+</Answer>
+</FlashCard>

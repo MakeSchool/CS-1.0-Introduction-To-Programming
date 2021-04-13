@@ -1,0 +1,25 @@
+---
+title: 'First Words: Build Your Chatbot'
+slug: 'first-words'
+contentType: 'Exercise'
+contentSrc: '@makeschool2/T9-ChatBotBuild'
+---
+
+# Chat Bot Build
+
+Once you've chosen your chatbot theme, follow these steps to build your project :robot: Remember the resources that you can refer to if you are looking for direction or need to ask a question:
+
+* The Chat Bot Project Outline on the previous page
+* The project walkthrough with our version of the Chat Bot on the following page
+* Any of the previous course topics
+* The course Discord channel
+
+## Steps to Complete
+
+1. Use print statements to greet the user and explain your chat bot theme.
+
+2. Get user input using `input()` function and assign the value to a variable called `user_response`. Remember that the prompt of the input function is what the chatbot is saying to your user!
+
+3. Create a function named `get_bot_response` that takes the parameter `user_response` and returns a string with the chat bot response. The function should use at least 2 lists to store unique bot responses and then use conditionals to decide which of the response lists to select a random choice from. Example: the user_response "happy" could return a response randomly chosen from a list of happy replies like "Yay!". Remember to test that your function works as expected by testing it with different user_response inputs.
+
+4. Use a while loop to keep running your chat bot until the user enters done. Think carefully about what code you want to repeat inside of your while loop (for example getting the user input and calling the `get_bot_response` function) and what code you only need to run once (for example defining the `get_bot_response` function).
